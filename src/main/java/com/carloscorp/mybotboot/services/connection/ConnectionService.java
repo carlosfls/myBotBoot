@@ -36,10 +36,7 @@ public class ConnectionService {
      * Start the connection with the server and retry if fail
      */
     public static void startConnection() {
-
-        //todo para probar en local cambiar wss por ws.
         String uri = "ws://" + SERVER + "/api/websocket";
-
         // Add custom headers to WebSocketStompClient requests
         WebSocketHttpHeaders headers = new WebSocketHttpHeaders();
         headers.add("X-AppId-Header", "1");
